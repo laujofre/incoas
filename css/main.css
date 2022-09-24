@@ -87,6 +87,11 @@ textarea {
    Estilos realizados por 1030
    ========================================================================== */
 /*Estilos generales*/
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
 .contenedor {
   width: 100%; 
   margin: 5px 0; 
@@ -1011,7 +1016,7 @@ table{
   padding: 0 0 50px 0;
   text-align: center;
   width: 90%;
-  margin: 15px;
+  margin: 0 !important;
 }
 .direccion {
   margin: 30px 0 0 0;
@@ -1078,6 +1083,13 @@ table{
 }
 #text_filter {
   background-color: #7790a6;
+} 
+
+@media screen and (max-width: 400px) {
+  .datos-form, .mensaje{
+    width: 180px;
+    size: 25;
+  }
 }
 /*fin contactanos*/
 
