@@ -1083,6 +1083,7 @@ table{
 @media screen and (max-width: 400px) {
   .datos-form, .mensaje{
     width: 180px;
+    size: 25;
   }
 }
 /*fin contactanos*/
