@@ -1081,9 +1081,8 @@ table{
 } 
 
 @media screen and (max-width: 400px) {
-  html, body {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
+  .formulario input {
+    width: 90%;
   }
   .datos-form, .mensaje{
     width: 180px;
