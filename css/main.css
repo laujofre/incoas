@@ -11,1382 +11,1379 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Estilos realizados por 1030
-   ========================================================================== */
-/*Estilos generales*/
-.contenedor {
-  width: 100%; 
-  margin: 5px 0; 
-}
-.titulo-seccion{
-  text-align: center;
-  font-family:'Cardo', serif;
-  font-size: 3.5rem;
-  padding: 30px 0 10px 0;
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: #159a9c;
-  text-shadow: 2px 2px rgb(21, 154, 156, 0.4);
-}
-.titulo-seccion h2 {
-  font-size: 2.8rem;
-}
-@media screen and (max-width: 720px) {
-  .titulo-seccion h2 {
-    font-size: 2rem;
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
   }
-}
-@media screen and (min-width: 721px) and (max-width: 980px) {
-  .titulo-seccion h2{
-    font-size: 2.5rem;
-  }
-}
-/*Barra de Navegación*/
-.navbar {
-  padding: 0 0 0.5rem;
-}
-.navbar-expand-lg {
-  background-color: #545454 !important;
-}
-.logo {
-  width: 10%;
-}
-
-.navbar-toggler img {
-  height: 40px;
-  width: 40px;
-}
-
-.nav-item {
-  padding: 0 18px;
-}
-.nav-item a:hover {
-  color: #ffffff;
-  background-color: #159a9c;
-  border-radius: 5px;
-}
-.navbar-nav li a {
-  color: white;
-}
-.nav-link {
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  letter-spacing: 2px;
-}
-.collapse {
-  margin: 0 0 0 3%;
-}
-@media screen and (max-width: 991px) {
-  .logo{
-    margin: 0 10px;
-  }
-}
-@media screen and (max-width: 1279px) {
-  .nav-link {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 999px) {
-  .collapse {
-    margin: 0 0 0 12%;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1052px) {
-  .collapse {
-    margin: 0 0 0 14%;
-  }
-}
-@media screen and (min-width: 1053px) and (max-width: 1082px) {
-  .collapse {
-    margin: 0 0 0 18%;
-  }
-}
-@media screen and (min-width: 1083px) and (max-width: 1112px) {
-  .collapse {
-    margin: 0 0 0 20%;
-  }
-}
-@media screen and (min-width: 1113px) and (max-width: 1178px) {
-  .collapse {
-    margin: 0 0 0 22%;
-  }
-}
-@media screen and (min-width: 1179px) and (max-width: 1214px) {
-  .collapse {
-    margin: 0 0 0 26%;
-  }
-}
-@media screen and (min-width: 1215px) and (max-width: 1253px) {
-  .collapse {
-    margin: 0 0 0 28%;
-  }
-}
-@media screen and (min-width: 1254px) and (max-width: 1279px) {
-  .collapse {
-    margin: 0 0 0 30%;
-  }
-} /*Fin Menú*/
-
-/* Footer*/
-#footer{
-  background-color: #545454;
-  padding: 3% 7% 3%;
-  width: 100%;
-  display: block;
-  text-align: center;
-}
-.nav-footer a {
-  text-decoration: none;
-  padding: 0 8px 0 8px;
-  color: white;
-  text-align: center;
-  margin: 10px;
-}
-.rrss-footer img {
-  height: 40px;
-  width: 40px;
-  color: white;
-  margin: 20px;
-}
-.derechos{
-  font-size: 0.8rem;
-  text-align: center;
-  margin: 10px 0 0 0;
-  padding: 0;
-  color: gray;
-}/* fin footer*/
-/*
-
-.container {
-  font-family: 'Cardo', serif;
-  font-weight: bold;
-}
-
-.lugar img {
-  width: 30px;
-  height: 30px;
-  color: #b3d4fc;
-}
   
-.rrss-bar{
-  height: 40px;
-    width: 40px;
-}
-*/
-
-
-/* PAGINA INDEX*/
-/*Carrousel de portada*/
-.carousel-inner {
-  width: 100%;
-  height: auto;
-}
-.portada {
-  position: relative;
-  text-align: center;
-}
-.titulo {
-  position: absolute;
-  font-family:'Cardo', serif;
-  font-weight: bold;
-  font-size: 10em;
-  color: white;
-  letter-spacing: 25px;
-  text-transform: uppercase;
-  top: 50px;
-  right: 230px;
-  text-shadow: 4px 3px rgb(54, 54, 54);
-}
-
-.descripcion-titulo {
-  position: absolute;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  font-size: 2em;
-  color: #262626;
-  letter-spacing: 2.5px;
-  top: 380px;
-  right: 260px;
-  text-shadow: 1px 1px rgb(255, 255, 255);
-}
-
-@media screen and (max-width: 408px) {
-  .titulo {
-    font-size: 3.5em;
-    letter-spacing: 10px;
-    top: 30px;
-    right: 40px;
-  }
-  .descripcion-titulo {
-    font-size: 0.7rem;
-    color: black;
-    letter-spacing: 1.3px;
-    top: 130px;
-    right: 45px;
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
     text-shadow: none;
   }
-  .portada, .carousel, .carousel-inner{
-  height: auto;
-  }
-}
-@media screen and (min-width: 408px) and (max-width: 460px) {
-  .titulo {
-    font-size: 4em;
-    letter-spacing: 10px;
-    top: 15px;
-    right: 40px;
-  }
-  .descripcion-titulo {
-    font-size: 0.8rem;
-    letter-spacing: 1.3px;
-    top: 125px;
-    right: 45px;
+  
+  ::selection {
+    background: #b3d4fc;
     text-shadow: none;
   }
-  .portada, .carousel, .carousel-inner{
-    height: auto;
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
   }
-}
-
-@media screen and (min-width: 460px) and (max-width: 490px) {
-  .titulo {
-    font-size: 4.5rem;
-    letter-spacing: 8px;
-    top: 20px;
-    right: 50px;
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
   }
-  .descripcion-titulo {
-    font-size: 0.8rem;
-    letter-spacing: 1.5px;
-    top: 145px;
-    right: 60px;
-    text-shadow: none;
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
   }
-  .portada, .carousel, .carousel-inner{
-    height: auto;
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
   }
-}
-@media screen and (min-width: 490px) and (max-width: 510px) {
-  .titulo {
-    font-size: 4.5em;
-    letter-spacing: 10px;
-    top: 30px;
-    right: 50px;
+  
+  /* ==========================================================================
+     Estilos realizados por 1030
+     ========================================================================== */
+  /*Estilos generales*/
+  .contenedor {
+    width: 100%; 
+    margin: 5px 0; 
   }
-  .descripcion-titulo {
-    font-size: 0.9em;
-    top: 150px;
-    right: 25px;
-    text-shadow: none;
-  }
-  .portada, .carousel, .carousel-inner{
-    height: auto;
-  }
-}
-@media screen and (min-width: 510px) and (max-width: 530px) {
-  .titulo {
-    font-size: 5em;
-    letter-spacing: 10px;
-    top: 40px;
-    right: 60px;
-  }
-  .descripcion-titulo {
-    font-size: 0.9em;
-    top: 60px;
-    right: 55px;
-    text-shadow: none;
-  }
-  .portada, .carousel, .carousel-inner{
-    height: auto;
-  }
-}
-@media screen and (min-width: 530px) and (max-width: 550px) {
-  .titulo {
-    font-size: 5em;
-    letter-spacing: 10px;
-    top: 30px;
-    right: 55px;
-  }
-  .descripcion-titulo {
-    font-size: 1rem;
-    top: 170px;
-    right: 70px;
-    text-shadow: none;
-    letter-spacing: 1px;
-  }
-  .portada, .carousel, .carousel-inner{
-    height: auto;
-  }
-}
-@media screen and (min-width: 550px) and (max-width: 590px) {
-  .titulo {
-    font-size: 5em;
-    letter-spacing: 10px;
-    top: 30px;
-    right: 70px;
-  }
-  .descripcion-titulo {
-    font-size: 0.9em;
-    letter-spacing: 1.5px;
-    top: 170px;
-    right: 85px;
-    text-shadow: none;
-  }
-  .portada, .carousel, .carousel-inner {
-    height: auto;
-  }
-}
-
-@media screen and (min-width: 590px) and (max-width: 599px) {
-  .titulo {
-    font-size: 5.5rem;
-    letter-spacing: 10px;
-    top: 20px;
-    right: 60px;
-  }
-  .descripcion-titulo {
-    font-size: 0.9rem;
-    letter-spacing: 2px;
-    top: 170px;
-    right: 80px;
-    text-shadow: none;
-  }
-  .portada, .carousel, .carousel-inner{
-    height: auto;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 650px) {
-  .titulo {
-    font-size: 6em;
-    letter-spacing: 10px;
-    top: 30px;
-    right: 80px;
-  }
-  .descripcion-titulo {
-    font-size: 1.1em;
-    letter-spacing: 2px;
-    top: 200px;
-    right: 80px;
-    text-shadow: none;
-  }
-  .portada, .carousel, .carousel-inner{
-    height: auto;
-  }
-}
-@media screen and (min-width: 650px) and (max-width: 700px) {
-  .titulo {
-    font-size: 6em;
-    letter-spacing: 10px;
-    top: 50px;
-    right: 100px;
-  }
-  .descripcion-titulo {
-    font-size: 1.1em;
-    letter-spacing: 2px;
-    top: 210px;
-    right: 105px;
-    text-shadow: none;
-  }
-  .portada, .carousel, .carousel-inner{
-    height: auto;
-  }
-}
-@media screen and (min-width: 700px) and (max-width: 730px) {
-  .titulo {
-    font-size: 7rem;
-    letter-spacing: 10px;
-    top: 30px;
-    right: 80px;
-  }
-  .descripcion-titulo {
-    font-size: 1.2em;
-    letter-spacing: 2.1px;
-    top: 220px;
-    right: 100px;
-    text-shadow: none;
-  }
-  .portada, .carousel, .carousel-inner{
-    height: auto;
-  }
-}
-@media screen and (min-width: 730px) and (max-width: 765px) {
-  .titulo {
-    font-size: 7rem;
-    letter-spacing: 10px;
-    top: 30px;
-    right: 90px;
-  }
-  .descripcion-titulo {
-    font-size: 1.2em;
-    letter-spacing: 2.1px;
-    top: 220px;
-    right: 110px;
-    text-shadow: none;
-  }
-}
-@media screen and (min-width: 765px) and (max-width: 780px) {
-  .titulo {
-    font-size: 7rem;
-    letter-spacing: 10px;
-    top: 40px;
-    right: 110px;
-  }
-  .descripcion-titulo {
-    font-size: 1.2em;
-    letter-spacing: 2.1px;
-    top: 230px;
-    right: 130px;
-    text-shadow: none;
-  }
-  .portada, .carousel, .carousel-inner{
-    height: auto;
-  }
-}
-@media screen and (min-width: 780px) and (max-width: 820px) {
-  .titulo {
-    font-size: 7rem;
-    letter-spacing: 10px;
-    top: 50px;
-    right: 130px;
-  }
-  .descripcion-titulo {
-    font-weight: bold;
-    font-size: 1.2em;
-    color: #262626;
-    letter-spacing: 2.5px;
-    top: 240px;
-    right: 140px;
-  }
-  .portada, .carousel, .carousel-inner{
-    height: auto;
-  }
-}
-@media screen and (min-width: 820px) and (max-width: 850px) {
-  .titulo {
-    font-size: 8.5em;
-    letter-spacing: 15px;
-    top: 20px;
-    right: 80px;
-  }
-  .descripcion-titulo {
-    font-size: 1.5em;
-    letter-spacing: 2.5px;
-    top: 250px;
-    right: 110px;
-    text-shadow: 1px 1px rgb(0 0 0);
-  }
-  .portada, .carousel, .carousel-inner{
-    height: auto;
-  }
-}
-@media screen and (min-width: 850px) and (max-width: 870px) {
-  .titulo {
-    font-size: 8.5em;
-    letter-spacing: 15px;
-    top: 30px;
-    right: 85px;
-  }
-  .descripcion-titulo {
-    font-size: 1.6em;
-    letter-spacing: 2.5px;
-    top: 260px;
-    right: 100px;
-  }
-  .portada, .carousel, .carousel-inner{
-    height: auto;
-  }
-}
-@media screen and (min-width: 870px) and (max-width: 940px) {
-  .titulo {
-    font-size: 8.5em;
-    letter-spacing: 15px;
-    top: 40px;
-    right: 100px;
-  }
-  .descripcion-titulo {
-    font-size: 1.6em;
-    letter-spacing: 2.5px;
-    top: 270px;
-    right: 110px;
-  }
-  .portada, .carousel, .carousel-inner{
-    height: auto;
-  }
-}
-@media screen and (min-width: 940px) and (max-width: 950px) {
-  .titulo {
-    font-size: 8.5em;
-    letter-spacing: 15px;
-    top: 50px;
-    right: 130px;
-  }
-  .descripcion-titulo {
-    font-size: 1.6em;
-    letter-spacing: 2.5px;
-    top: 280px;
-    right: 140px;
-  }
-  .portada, .carousel, .carousel-inner{
-    height: auto;
-  }
-}
-@media screen and (min-width: 950px) and (max-width: 990px) {
-  .titulo {
-    font-size: 8.5em;
-    letter-spacing: 15px;
-    top: 75px;
-    right: 130px;
-  }
-  .descripcion-titulo {
-    font-size: 1.6em;
-    letter-spacing: 2.5px;
-    top: 300px;
-    right: 140px;
-  }
-  .portada, .carousel, .carousel-inner{
-    height: auto;
-  }
-}
-@media screen and (min-width: 990px) and (max-width: 1100px) {
-  .titulo {
-    letter-spacing: 25px;
-    right: 80px;
-  }
-  .descripcion-titulo {
-    letter-spacing: 2.5px;
-    top: 330px;
-    right: 110px;
-  }
-  .portada, .carousel, .carousel-inner{
-    height: auto;
-  }
-}
-@media screen and (min-width: 1100px) and (max-width: 1200px) {
-  .titulo {
-    right: 120px;
-  }
-  .descripcion-titulo {
-    top: 370px;
-    right: 150px;
-}
-  .portada, .carousel, .carousel-inner{
-    height: auto;
-  }
-}
-@media screen and (min-width: 1200px) and (max-width: 1250px) {
-  .titulo {
-    top: 100px;
-    right: 170px;
-  }
-  .descripcion-titulo {
-    top: 380px;
-    right: 200px;
-  }
-  .portada, .carousel, .carousel-inner{
-    height: auto;
-  }
-}
-
-/*Seccion Nuestra Labor*/
-.labor-row{
-  width: 90%;
-  margin: 40px 60px 120px 60px;
-  text-align: left;
-  line-height: 1.5em;
-}
-.labor-text {
-  width: 50%;
-  float: left;
-  margin: auto 20px;
-  border-radius: 15px;
-}
-.labor-row p {
-  padding: 0;
-}
-
-@media screen and (max-width: 720px) {
-  .labor-row {
-    margin: 20px 20px 60px 30px !important;
-  }
-}
-/*Fin Nuestra Labor*/
-
-/*Sección Nosotros*/
-.fondo {
-  background-color: #474e5d;
-  font-family: Helvetica, sans-serif;
-}
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-/* Container around content */
-.cuadro  {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-/* The circles on the timeline */
-.cuadro::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -12px;
-  background-color: white;
-  border: 4px solid #159a9c;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-/* Place the container to the left */
-.izquierda {
-  left: 0;
-}
-/* Place the container to the right */
-.derecha {
-  left: 50%;
-}
-/* Add arrows to the left container (pointing right) */
-.izquierda::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-/* Add arrows to the right container (pointing left) */
-.derecha::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-/* Fix the circle for containers on the right side */
-.derecha::after {
-  left: -14px;
-}
-/* The actual content */
-.contenido{
-  padding: 10px 20px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-}
-.fecha-nos{
+  .titulo-seccion{
+    text-align: center;
     font-family:'Cardo', serif;
-    font-size: 1.5rem;
+    font-size: 3.5rem;
+    padding: 30px 0 10px 0;
     font-weight: bold;
-    letter-spacing: 1px;
-    color: black;
-    padding: 8px;
-}
-.text-nos {
-  padding: 8px;
-}
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .timeline::after {
-  left: 31px;
+    letter-spacing: 2px;
+    color: #159a9c;
+    text-shadow: 2px 2px rgb(21, 154, 156, 0.4);
   }
-  /* Full-width containers */
-  .cuadro {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
+  .titulo-seccion h2 {
+    font-size: 2.8rem;
   }
-  .text-nos {
-    font-size: .8rem;
+  @media screen and (max-width: 720px) {
+    .titulo-seccion h2 {
+      font-size: 2rem;
+    }
   }
-  .fecha-nos {
+  @media screen and (min-width: 721px) and (max-width: 980px) {
+    .titulo-seccion h2{
+      font-size: 2.5rem;
+    }
+  }
+  /*Barra de Navegación*/
+  .navbar {
+    padding: 0 0 0.5rem;
+  }
+  .navbar-expand-lg {
+    background-color: #545454 !important;
+  }
+  .logo {
+    width: 10%;
+  }
+  
+  .navbar-toggler img {
+    height: 40px;
+    width: 40px;
+  }
+  
+  .nav-item {
+    padding: 0 18px;
+  }
+  .nav-item a:hover {
+    color: #ffffff;
+    background-color: #159a9c;
+    border-radius: 5px;
+  }
+  .navbar-nav li a {
+    color: white;
+  }
+  .nav-link {
+    font-family: 'Lato', sans-serif;
     font-size: 1rem;
+    letter-spacing: 2px;
   }
-  /* Make sure that all arrows are pointing leftwards */
-  .cuadro::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  .collapse {
+    margin: 0 0 0 3%;
   }
- 
-  /* Make sure all circles are at the same spot */
-  .izquierda::after, .derecha::after {
-  left: 15px;
+  @media screen and (max-width: 991px) {
+    .logo{
+      margin: 0 10px;
+    }
   }
-  /* Make all right containers behave like the left ones */
-  .derecha {
-  left: 0%;
+  @media screen and (max-width: 1279px) {
+    .nav-link {
+      font-size: 1rem;
+    }
   }
-} /*Fin nosotros*/
-
-/*Sección Equipo*/
-.equipo-cartas {
-  width: 100%;
-  height: auto;
-  text-align: center;
-}
-.image-area {
-	position: relative;
-  margin: 20px;
-  display: inline-block;
-  text-align: center;
-}
-
-.img-wrapper
-{
-	width: 20%px;
-	height: 300px;
-	position: relative;
-	overflow: hidden;
-}
-
-.img-wrapper:before
-{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 180%;
-	height: 100%;
-	width: 100%;
-	background: rgba(255,255,255,.3);
-	z-index: 1;
-	transform: skew(45deg);
-	transition: .5s;
-}
-
-.img-wrapper:hover:before
-{
-	left: -180%;
-}
-
-.img-wrapper img
-{
-	height: 300px;
-	width: 100%;
-	filter: grayscale(100%);
-	transition: 2s;
-}
-.img-wrapper:hover img
-{
-	filter: grayscale(0%);
-	transform: scale(1.1);
-}
-
-.img-wrapper h2
-{
-	background: #159a9c;
-	font-family: Poppins;
-	color: #fff;
-	text-align: center;
-	text-transform: uppercase;
-	margin: 0;
-	padding: 10px 0;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	transform: perspective(400px) rotateY(90deg);
-	transform-origin: right;
-	transition: 1s;
-  font-size: 1.3rem;
-}
-
-.img-wrapper:hover h2
-{
-	transform: perspective(400px) rotateY(0deg);
-}
-
-.img-wrapper ul
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	background: rgba(255,255,255,0);
-}
-
-.img-wrapper ul li
-{
-	background: #333;
-	height: 40px;
-	width: 40px;
-	text-align: center;
-	line-height: 40px;
-	transform: perspective(800px) rotateY(90deg);
-	transition: .5s;
-	transform-origin: left;
-}
-
-.img-wrapper:hover ul li
-{
-	transform: perspective(800px) rotateY(0deg);
-}
-
-.img-wrapper:hover ul li:nth-child(1)
-{
-	transition-delay: .2s;
-}
-
-.img-wrapper:hover ul li:nth-child(2)
-{
-	transition-delay: .6s;
-}
-
-.img-wrapper:hover ul li:nth-child(3)
-{
-	transition-delay: .8s;
-}
-
-.img-wrapper:hover ul li:nth-child(4)
-{
-	transition-delay: 1s;
-}
-
-.img-wrapper ul li a
-{
-	color: #159a9c;
-	background: rgba(255,255,255,0);
-}
-
-.img-wrapper ul li i
-{
-	color: #159a9c;
-	background: rgba(255,255,255,0);
-}
-
-.img-wrapper ul li i:hover
-{
-	color: #fff;
-	background: rgba(255,255,255,0);
-}
-
-/*Sección Investigación*/
-.cta{
-  background-color: #123642;
-  text-align: center;
-  padding: 5% 10%;
-  width: 100%;
-  height: 100%;
-}
-.text-conoce{
-  font-size: 2rem;
-  font-family:'Cardo', serif;
-  color: white;
-  text-transform: uppercase;
-}
-.btn {
-  width: 300px;
-  margin: 50px 20px;
-}
-@media screen and (max-width: 619px) {
-  .text-conoce{
+  @media screen and (min-width: 992px) and (max-width: 999px) {
+    .collapse {
+      margin: 0 0 0 12%;
+    }
+  }
+  @media screen and (min-width: 1000px) and (max-width: 1052px) {
+    .collapse {
+      margin: 0 0 0 14%;
+    }
+  }
+  @media screen and (min-width: 1053px) and (max-width: 1082px) {
+    .collapse {
+      margin: 0 0 0 18%;
+    }
+  }
+  @media screen and (min-width: 1083px) and (max-width: 1112px) {
+    .collapse {
+      margin: 0 0 0 20%;
+    }
+  }
+  @media screen and (min-width: 1113px) and (max-width: 1178px) {
+    .collapse {
+      margin: 0 0 0 22%;
+    }
+  }
+  @media screen and (min-width: 1179px) and (max-width: 1214px) {
+    .collapse {
+      margin: 0 0 0 26%;
+    }
+  }
+  @media screen and (min-width: 1215px) and (max-width: 1253px) {
+    .collapse {
+      margin: 0 0 0 28%;
+    }
+  }
+  @media screen and (min-width: 1254px) and (max-width: 1279px) {
+    .collapse {
+      margin: 0 0 0 30%;
+    }
+  } /*Fin Menú*/
+  
+  /* Footer*/
+  #footer{
+    background-color: #545454;
+    padding: 3% 7% 3%;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .nav-footer a {
+    text-decoration: none;
+    padding: 0 8px 0 8px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+  }
+  .rrss-footer img {
+    height: 40px;
+    width: 40px;
+    color: white;
     margin: 20px;
   }
-  .btn {
-    margin: 20px 30px;
-  }
-}
-@media screen and (min-width: 620px) and (max-width: 745px) {
-  .btn {
-    width: 200px;
-  }
-}
-@media screen and (min-width: 746px) and (max-width: 871px) {
-  .btn {
-    width: 250px;
-  }
-}
-@media screen and (max-width: 820px) {
-  .text-conoce {
-    font-size: 1.5rem;
-  }
-}
-/*Fin Sección Investigación*/
-
-/*comienzo contactanos*/
-table{
-  width: 100%;
-}
-.seccion-contacto{
-  padding: 0 0 50px 0;
-  text-align: center;
-  width: 90%;
-  margin: 0 !important;
-}
-.direccion {
-  margin: 30px 0 0 0;
-}
-.direccion img {
-  width: 30px;
-  height: 30px;
-}
-.direccion p {
-  padding: 0px;
-  margin: 0 0 40px 0;
-}
-.descripcion-datos {
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  font-family: 'Lato', sans-serif;
-  letter-spacing: 2px;
-}
-.datos-contacto {
-  font-family: 'Lato', sans-serif;
-}
-.contactform {
-  text-align: center;
-}
-.datos-form{
-  height: 40px;
-}
-.formulario ::placeholder {
-  color:#159a9c;
-}
-.formulario label {
-  margin: 0px 5px 5px 3px;
-  font-size: 1rem;
-}
-.formulario input {
-  margin: 5px 5px 5px 3px;
-  background-color: #123642;
-  color: white;
-  border-radius: 5px;
-  border: 1px;
-}
-.formulario textarea {
-  margin: 5px 5px 5px 3px;
-  background-color: #123642;
-  color: white;
-  border-radius: 5px;
-}
-#text_filter::placeholder {
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 1ch;
-}
-.form-bot {
-  border-radius: 30px !important;
-  width: 120px;
-  height: 30px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-family:'Cardo', serif;
-}
-.form-bot:hover{
-  color: #ffffff !important;
-  background-color: #545454;
-}
-#text_filter {
-  background-color: #7790a6;
-} 
-
-@media screen and (max-width: 400px) {
-  .formulario input {
-    width: 90%;
-  }
-  .datos-form, .mensaje{
-    width: 180px;
-    size: 25;
-  }
-}
-/*fin contactanos*/
-
-
-/* Página Buscador */
-.buscador-medico {
-  margin: 50px;
-  text-align: center;
-}
-.buscador {
-  text-align: center;
-  margin: 0 0 30px 0;
-}
-.buscador input {
-  border-radius: 30px;
-  border: #7790a6;
-  height: 4rem;
-  width: 30rem;
-}
-#listado {
-  text-align: center;
-  margin: 0 5px;
-}
-#publicaciones{
-  display: none;
-}
-.prot-list {
-  font-size: 1.2rem;
-  margin: 20px;
-  text-align: center;
-  text-decoration: none !important;
-  color: #545454;
-  font-family: 'Lato', sans-serif ;
-}
-.titulo-buscador {
-  text-align: center;
-  color: #545454;
-  font-family: 'Cardo', serif;
-  text-transform: uppercase;
-  margin-top: 80px;
-  margin-bottom:60px;
-  letter-spacing: 0.5ch;
-}
-@media screen and (max-width: 930px) {
-  #listado a {
-    width: 70%;
-    text-align:center ;
-    margin: 10px;
- 
+  .derechos{
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 10px 0 0 0;
     padding: 0;
+    color: gray;
+  }/* fin footer*/
+  /*
+  
+  .container {
+    font-family: 'Cardo', serif;
+    font-weight: bold;
+  }
+  
+  .lugar img {
+    width: 30px;
+    height: 30px;
+    color: #b3d4fc;
+  }
+    
+  .rrss-bar{
+    height: 40px;
+      width: 40px;
+  }
+  */
+  
+  
+  /* PAGINA INDEX*/
+  /*Carrousel de portada*/
+  .carousel-inner {
+    width: 100%;
+    height: auto;
+  }
+  .portada {
+    position: relative;
+    text-align: center;
+  }
+  .titulo {
+    position: absolute;
+    font-family:'Cardo', serif;
+    font-weight: bold;
+    font-size: 10em;
+    color: white;
+    letter-spacing: 25px;
+    text-transform: uppercase;
+    top: 50px;
+    right: 230px;
+    text-shadow: 4px 3px rgb(54, 54, 54);
+  }
+  
+  .descripcion-titulo {
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #262626;
+    letter-spacing: 2.5px;
+    top: 380px;
+    right: 260px;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+  }
+  
+  @media screen and (max-width: 408px) {
+    .titulo {
+      font-size: 3.5em;
+      letter-spacing: 10px;
+      top: 30px;
+      right: 40px;
+    }
+    .descripcion-titulo {
+      font-size: 0.7rem;
+      color: black;
+      letter-spacing: 1.3px;
+      top: 130px;
+      right: 45px;
+      text-shadow: none;
+    }
+    .portada, .carousel, .carousel-inner{
+    height: auto;
+    }
+  }
+  @media screen and (min-width: 408px) and (max-width: 460px) {
+    .titulo {
+      font-size: 4em;
+      letter-spacing: 10px;
+      top: 15px;
+      right: 40px;
+    }
+    .descripcion-titulo {
+      font-size: 0.8rem;
+      letter-spacing: 1.3px;
+      top: 125px;
+      right: 45px;
+      text-shadow: none;
+    }
+    .portada, .carousel, .carousel-inner{
+      height: auto;
+    }
+  }
+  
+  @media screen and (min-width: 460px) and (max-width: 490px) {
+    .titulo {
+      font-size: 4.5rem;
+      letter-spacing: 8px;
+      top: 20px;
+      right: 50px;
+    }
+    .descripcion-titulo {
+      font-size: 0.8rem;
+      letter-spacing: 1.5px;
+      top: 145px;
+      right: 60px;
+      text-shadow: none;
+    }
+    .portada, .carousel, .carousel-inner{
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 490px) and (max-width: 510px) {
+    .titulo {
+      font-size: 4.5em;
+      letter-spacing: 10px;
+      top: 30px;
+      right: 50px;
+    }
+    .descripcion-titulo {
+      font-size: 0.9em;
+      top: 150px;
+      right: 25px;
+      text-shadow: none;
+    }
+    .portada, .carousel, .carousel-inner{
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 510px) and (max-width: 530px) {
+    .titulo {
+      font-size: 5em;
+      letter-spacing: 10px;
+      top: 40px;
+      right: 60px;
+    }
+    .descripcion-titulo {
+      font-size: 0.9em;
+      top: 60px;
+      right: 55px;
+      text-shadow: none;
+    }
+    .portada, .carousel, .carousel-inner{
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 530px) and (max-width: 550px) {
+    .titulo {
+      font-size: 5em;
+      letter-spacing: 10px;
+      top: 30px;
+      right: 55px;
+    }
+    .descripcion-titulo {
+      font-size: 1rem;
+      top: 170px;
+      right: 70px;
+      text-shadow: none;
+      letter-spacing: 1px;
+    }
+    .portada, .carousel, .carousel-inner{
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 550px) and (max-width: 590px) {
+    .titulo {
+      font-size: 5em;
+      letter-spacing: 10px;
+      top: 30px;
+      right: 70px;
+    }
+    .descripcion-titulo {
+      font-size: 0.9em;
+      letter-spacing: 1.5px;
+      top: 170px;
+      right: 85px;
+      text-shadow: none;
+    }
+    .portada, .carousel, .carousel-inner {
+      height: auto;
+    }
+  }
+  
+  @media screen and (min-width: 590px) and (max-width: 599px) {
+    .titulo {
+      font-size: 5.5rem;
+      letter-spacing: 10px;
+      top: 20px;
+      right: 60px;
+    }
+    .descripcion-titulo {
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+      top: 170px;
+      right: 80px;
+      text-shadow: none;
+    }
+    .portada, .carousel, .carousel-inner{
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 600px) and (max-width: 650px) {
+    .titulo {
+      font-size: 6em;
+      letter-spacing: 10px;
+      top: 30px;
+      right: 80px;
+    }
+    .descripcion-titulo {
+      font-size: 1.1em;
+      letter-spacing: 2px;
+      top: 200px;
+      right: 80px;
+      text-shadow: none;
+    }
+    .portada, .carousel, .carousel-inner{
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 650px) and (max-width: 700px) {
+    .titulo {
+      font-size: 6em;
+      letter-spacing: 10px;
+      top: 50px;
+      right: 100px;
+    }
+    .descripcion-titulo {
+      font-size: 1.1em;
+      letter-spacing: 2px;
+      top: 210px;
+      right: 105px;
+      text-shadow: none;
+    }
+    .portada, .carousel, .carousel-inner{
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 700px) and (max-width: 730px) {
+    .titulo {
+      font-size: 7rem;
+      letter-spacing: 10px;
+      top: 30px;
+      right: 80px;
+    }
+    .descripcion-titulo {
+      font-size: 1.2em;
+      letter-spacing: 2.1px;
+      top: 220px;
+      right: 100px;
+      text-shadow: none;
+    }
+    .portada, .carousel, .carousel-inner{
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 730px) and (max-width: 765px) {
+    .titulo {
+      font-size: 7rem;
+      letter-spacing: 10px;
+      top: 30px;
+      right: 90px;
+    }
+    .descripcion-titulo {
+      font-size: 1.2em;
+      letter-spacing: 2.1px;
+      top: 220px;
+      right: 110px;
+      text-shadow: none;
+    }
+  }
+  @media screen and (min-width: 765px) and (max-width: 780px) {
+    .titulo {
+      font-size: 7rem;
+      letter-spacing: 10px;
+      top: 40px;
+      right: 110px;
+    }
+    .descripcion-titulo {
+      font-size: 1.2em;
+      letter-spacing: 2.1px;
+      top: 230px;
+      right: 130px;
+      text-shadow: none;
+    }
+    .portada, .carousel, .carousel-inner{
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 780px) and (max-width: 820px) {
+    .titulo {
+      font-size: 7rem;
+      letter-spacing: 10px;
+      top: 50px;
+      right: 130px;
+    }
+    .descripcion-titulo {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #262626;
+      letter-spacing: 2.5px;
+      top: 240px;
+      right: 140px;
+    }
+    .portada, .carousel, .carousel-inner{
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 820px) and (max-width: 850px) {
+    .titulo {
+      font-size: 8.5em;
+      letter-spacing: 15px;
+      top: 20px;
+      right: 80px;
+    }
+    .descripcion-titulo {
+      font-size: 1.5em;
+      letter-spacing: 2.5px;
+      top: 250px;
+      right: 110px;
+      text-shadow: 1px 1px rgb(0 0 0);
+    }
+    .portada, .carousel, .carousel-inner{
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 850px) and (max-width: 870px) {
+    .titulo {
+      font-size: 8.5em;
+      letter-spacing: 15px;
+      top: 30px;
+      right: 85px;
+    }
+    .descripcion-titulo {
+      font-size: 1.6em;
+      letter-spacing: 2.5px;
+      top: 260px;
+      right: 100px;
+    }
+    .portada, .carousel, .carousel-inner{
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 870px) and (max-width: 940px) {
+    .titulo {
+      font-size: 8.5em;
+      letter-spacing: 15px;
+      top: 40px;
+      right: 100px;
+    }
+    .descripcion-titulo {
+      font-size: 1.6em;
+      letter-spacing: 2.5px;
+      top: 270px;
+      right: 110px;
+    }
+    .portada, .carousel, .carousel-inner{
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 940px) and (max-width: 950px) {
+    .titulo {
+      font-size: 8.5em;
+      letter-spacing: 15px;
+      top: 50px;
+      right: 130px;
+    }
+    .descripcion-titulo {
+      font-size: 1.6em;
+      letter-spacing: 2.5px;
+      top: 280px;
+      right: 140px;
+    }
+    .portada, .carousel, .carousel-inner{
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 950px) and (max-width: 990px) {
+    .titulo {
+      font-size: 8.5em;
+      letter-spacing: 15px;
+      top: 75px;
+      right: 130px;
+    }
+    .descripcion-titulo {
+      font-size: 1.6em;
+      letter-spacing: 2.5px;
+      top: 300px;
+      right: 140px;
+    }
+    .portada, .carousel, .carousel-inner{
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 990px) and (max-width: 1100px) {
+    .titulo {
+      letter-spacing: 25px;
+      right: 80px;
+    }
+    .descripcion-titulo {
+      letter-spacing: 2.5px;
+      top: 330px;
+      right: 110px;
+    }
+    .portada, .carousel, .carousel-inner{
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 1100px) and (max-width: 1200px) {
+    .titulo {
+      right: 120px;
+    }
+    .descripcion-titulo {
+      top: 370px;
+      right: 150px;
+  }
+    .portada, .carousel, .carousel-inner{
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1250px) {
+    .titulo {
+      top: 100px;
+      right: 170px;
+    }
+    .descripcion-titulo {
+      top: 380px;
+      right: 200px;
+    }
+    .portada, .carousel, .carousel-inner{
+      height: auto;
+    }
+  }
+  
+  /*Seccion Nuestra Labor*/
+  .labor-row{
+    width: 90%;
+    margin: 40px 60px 120px 60px;
+    text-align: left;
+    line-height: 1.5em;
+  }
+  .labor-text {
+    width: 50%;
+    float: left;
+    margin: auto 20px;
+    border-radius: 15px;
+  }
+  .labor-row p {
+    padding: 0;
+  }
+  
+  @media screen and (max-width: 720px) {
+    .labor-row {
+      margin: 20px 20px 60px 30px !important;
+    }
+  }
+  /*Fin Nuestra Labor*/
+  
+  /*Sección Nosotros*/
+  .fondo {
+    background-color: #474e5d;
+    font-family: Helvetica, sans-serif;
+  }
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  /* Container around content */
+  .cuadro  {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  /* The circles on the timeline */
+  .cuadro::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12px;
+    background-color: white;
+    border: 4px solid #159a9c;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  /* Place the container to the left */
+  .izquierda {
+    left: 0;
+  }
+  /* Place the container to the right */
+  .derecha {
+    left: 50%;
+  }
+  /* Add arrows to the left container (pointing right) */
+  .izquierda::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  /* Add arrows to the right container (pointing left) */
+  .derecha::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  /* Fix the circle for containers on the right side */
+  .derecha::after {
+    left: -14px;
+  }
+  /* The actual content */
+  .contenido{
+    padding: 10px 20px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+  .fecha-nos{
+      font-family:'Cardo', serif;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: black;
+      padding: 8px;
+  }
+  .text-nos {
+    padding: 8px;
+  }
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
+    }
+    /* Full-width containers */
+    .cuadro {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    .text-nos {
+      font-size: .8rem;
+    }
+    .fecha-nos {
+      font-size: 1rem;
+    }
+    /* Make sure that all arrows are pointing leftwards */
+    .cuadro::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+   
+    /* Make sure all circles are at the same spot */
+    .izquierda::after, .derecha::after {
+    left: 15px;
+    }
+    /* Make all right containers behave like the left ones */
+    .derecha {
+    left: 0%;
+    }
+  } /*Fin nosotros*/
+  
+  /*Sección Equipo*/
+  .equipo-cartas {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .image-area {
+    position: relative;
+    margin: 20px;
     display: inline-block;
-    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .img-wrapper
+  {
+    width: 20%px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .img-wrapper:before
+  {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 180%;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,.3);
+    z-index: 1;
+    transform: skew(45deg);
+    transition: .5s;
+  }
+  
+  .img-wrapper:hover:before
+  {
+    left: -180%;
+  }
+  
+  .img-wrapper img
+  {
+    height: 300px;
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 2s;
+  }
+  .img-wrapper:hover img
+  {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+  }
+  
+  .img-wrapper h2
+  {
+    background: #159a9c;
+    font-family: Poppins;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: perspective(400px) rotateY(90deg);
+    transform-origin: right;
+    transition: 1s;
+    font-size: 1.3rem;
+  }
+  
+  .img-wrapper:hover h2
+  {
+    transform: perspective(400px) rotateY(0deg);
+  }
+  
+  .img-wrapper ul
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: rgba(255,255,255,0);
+  }
+  
+  .img-wrapper ul li
+  {
+    background: #333;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    transform: perspective(800px) rotateY(90deg);
+    transition: .5s;
+    transform-origin: left;
+  }
+  
+  .img-wrapper:hover ul li
+  {
+    transform: perspective(800px) rotateY(0deg);
+  }
+  
+  .img-wrapper:hover ul li:nth-child(1)
+  {
+    transition-delay: .2s;
+  }
+  
+  .img-wrapper:hover ul li:nth-child(2)
+  {
+    transition-delay: .6s;
+  }
+  
+  .img-wrapper:hover ul li:nth-child(3)
+  {
+    transition-delay: .8s;
+  }
+  
+  .img-wrapper:hover ul li:nth-child(4)
+  {
+    transition-delay: 1s;
+  }
+  
+  .img-wrapper ul li a
+  {
+    color: #159a9c;
+    background: rgba(255,255,255,0);
+  }
+  
+  .img-wrapper ul li i
+  {
+    color: #159a9c;
+    background: rgba(255,255,255,0);
+  }
+  
+  .img-wrapper ul li i:hover
+  {
+    color: #fff;
+    background: rgba(255,255,255,0);
+  }
+  
+  /*Sección Investigación*/
+  .cta{
+    background-color: #123642;
+    text-align: center;
+    padding: 5% 10%;
+    width: 100%;
+    height: 100%;
+  }
+  .text-conoce{
+    font-size: 2rem;
+    font-family:'Cardo', serif;
+    color: white;
+    text-transform: uppercase;
+  }
+  .btn {
+    width: 300px;
+    margin: 50px 20px;
+  }
+  @media screen and (max-width: 619px) {
+    .text-conoce{
+      margin: 20px;
+    }
+    .btn {
+      margin: 20px 30px;
+    }
+  }
+  @media screen and (min-width: 620px) and (max-width: 745px) {
+    .btn {
+      width: 200px;
+    }
+  }
+  @media screen and (min-width: 746px) and (max-width: 871px) {
+    .btn {
+      width: 250px;
+    }
+  }
+  @media screen and (max-width: 820px) {
+    .text-conoce {
+      font-size: 1.5rem;
+    }
+  }
+  /*Fin Sección Investigación*/
+  
+  /*comienzo contactanos*/
+  table{
+    width: 100%;
+  }
+  .seccion-contacto{
+    padding: 0 0 50px 0;
+    text-align: center;
+    width: 90%;
+    margin: 0 !important;
+  }
+  .direccion {
+    margin: 30px 0 0 0;
+  }
+  .direccion img {
+    width: 30px;
+    height: 30px;
+  }
+  .direccion p {
+    padding: 0px;
+    margin: 0 0 40px 0;
+  }
+  .descripcion-datos {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+  }
+  .datos-contacto {
+    font-family: 'Lato', sans-serif;
+  }
+  .contactform {
+    text-align: center;
+  }
+  .datos-form{
+    height: 40px;
+  }
+  .formulario ::placeholder {
+    color:#159a9c;
+  }
+  .formulario label {
+    margin: 0px 5px 5px 3px;
+    font-size: 1rem;
+  }
+  .formulario input {
+    margin: 5px 5px 5px 3px;
+    background-color: #123642;
+    color: white;
+    border-radius: 5px;
+    border: 1px;
+  }
+  .formulario textarea {
+    margin: 5px 5px 5px 3px;
+    background-color: #123642;
+    color: white;
+    border-radius: 5px;
+  }
+  #text_filter::placeholder {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1ch;
+  }
+  .form-bot {
+    border-radius: 30px !important;
+    width: 120px;
+    height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family:'Cardo', serif;
+  }
+  .form-bot:hover{
+    color: #ffffff !important;
+    background-color: #545454;
   }
   #text_filter {
+    background-color: #7790a6;
+  } 
+  
+  @media screen and (max-width: 400px) {
+    .datos-form, .mensaje{
+      width: 90%;
+      size: 25;
+    }
+  }
+  /*fin contactanos*/
+  
+  
+  /* Página Buscador */
+  .buscador-medico {
+    margin: 50px;
     text-align: center;
-    width: 20rem;
+  }
+  .buscador {
+    text-align: center;
+    margin: 0 0 30px 0;
+  }
+  .buscador input {
+    border-radius: 30px;
+    border: #7790a6;
+    height: 4rem;
+    width: 30rem;
+  }
+  #listado {
+    text-align: center;
+    margin: 0 5px;
+  }
+  #publicaciones{
+    display: none;
+  }
+  .prot-list {
+    font-size: 1.2rem;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none !important;
+    color: #545454;
+    font-family: 'Lato', sans-serif ;
   }
   .titulo-buscador {
-    margin: 10px;
+    text-align: center;
+    color: #545454;
+    font-family: 'Cardo', serif;
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-bottom:60px;
+    letter-spacing: 0.5ch;
   }
-}
-/*Fin Página Buscador*/
-
-/*Página Protocolos*/
-/*Mama Médico*/
-.encabezado {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-}
-.banner-mama {
-  width: 100%;
-  height: 200px;
-}
-.banner-mama img {
- object-fit: cover;
- width: 100%;
- height: 100%;
-}
-.nombre-mama {
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  color: #25c19b;
-  font-family: 'Cardo', serif;
-  font-size: 3rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-shadow: 2px 2px rgba(37, 36, 36, 0.4);
-}
-.nombre-mama h1 {
-  font-size: 2rem;
-}
-.mas-prot {
-  border-radius: 30px !important;
-}
-.mas-info  {
-  text-align: center;
-}
-.descrip-prot {
-  margin-bottom: 0;
-  margin-top: 20px;
-  padding: 5px 30px;
-  font-family:'Lato', sans-serif;
-  color: #545454;
-  letter-spacing: 0.5px;
-  line-height: 30px;
-}
-.mas-info button {
-  text-transform: uppercase;
-  font-family:'Cardo', serif;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  margin-top: 10px;
-} 
-/*Fin Protocolos*/
-
-/*Pagina Protocolos Medicos*/
-
-.boton-volver {
-  text-align: center;
-  padding: 0 10% 3% 10%;
-}
-span {
-  font-weight: bold;
-}
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+  @media screen and (max-width: 930px) {
+    #listado a {
+      width: 70%;
+      text-align:center ;
+      margin: 10px;
+   
+      padding: 0;
+      display: inline-block;
+      font-size: 1.5rem;
+    }
+    #text_filter {
+      text-align: center;
+      width: 20rem;
+    }
+    .titulo-buscador {
+      margin: 10px;
+    }
   }
-
-  a,
-  a:visited {
-    text-decoration: underline;
+  /*Fin Página Buscador*/
+  
+  /*Página Protocolos*/
+  /*Mama Médico*/
+  .encabezado {
+    position: relative;
+    display: inline-block;
+    width: 100%;
   }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
+  .banner-mama {
+    width: 100%;
+    height: 200px;
   }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
+  .banner-mama img {
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
   }
-
+  .nombre-mama {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    color: #25c19b;
+    font-family: 'Cardo', serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgba(37, 36, 36, 0.4);
+  }
+  .nombre-mama h1 {
+    font-size: 2rem;
+  }
+  .mas-prot {
+    border-radius: 30px !important;
+  }
+  .mas-info  {
+    text-align: center;
+  }
+  .descrip-prot {
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding: 5px 30px;
+    font-family:'Lato', sans-serif;
+    color: #545454;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+  }
+  .mas-info button {
+    text-transform: uppercase;
+    font-family:'Cardo', serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 10px;
+  } 
+  /*Fin Protocolos*/
+  
+  /*Pagina Protocolos Medicos*/
+  
+  .boton-volver {
+    text-align: center;
+    padding: 0 10% 3% 10%;
+  }
+  span {
+    font-weight: bold;
+  }
+  
+  
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
+   * Hide visually and from screen readers
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
+  
+  .hidden,
+  [hidden] {
+    display: none !important;
   }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
+  
   /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   * Hide only visually, but have it available for screen readers:
+   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   *
+   * 1. For long content, line feeds are not interpreted as spaces and small width
+   *    causes content to wrap 1 word per line:
+   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
    */
-  thead {
-    display: table-header-group;
+  
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
   }
-
-  tr,
-  img {
-    page-break-inside: avoid;
+  
+  /*
+   * Extends the .sr-only class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+  
+  .sr-only.focusable:active,
+  .sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
   }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
+  
+  /*
+   * Hide visually and from screen readers, but maintain layout
+   */
+  
+  .invisible {
+    visibility: hidden;
   }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
+  
+  /*
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+  
+  .clearfix::before,
+  .clearfix::after {
+    content: " ";
+    display: table;
   }
-}
-
+  
+  .clearfix::after {
+    clear: both;
+  }
+  
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+  
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+  
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+  
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+  
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+  
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+  
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
+  
+    pre {
+      white-space: pre-wrap !important;
+    }
+  
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+  
+    /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+      display: table-header-group;
+    }
+  
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+  
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+  
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
+  
